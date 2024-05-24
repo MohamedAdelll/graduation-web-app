@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/gp/static/css/main.92b962bc.css",
-    "main.js": "/gp/static/js/main.ac8538e8.js",
-    "static/media/square4.png": "/gp/static/media/square4.b0072563cab16ef45d81.png",
-    "static/media/square1.png": "/gp/static/media/square1.082ea17aaf44aed9868a.png",
-    "static/media/square3.png": "/gp/static/media/square3.235ea41b7cee0696448d.png",
-    "static/media/square2.png": "/gp/static/media/square2.8ce0f9b6a9f216ada045.png",
-    "static/media/square5.png": "/gp/static/media/square5.16283001f5a086113265.png",
-    "static/media/darken-night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png": "/gp/static/media/darken-night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.049a2cd26a85856a45e6.png",
-    "static/media/night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png": "/gp/static/media/night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.e6a30d27482b2b409f71.png",
-    "static/media/dots.png": "/gp/static/media/dots.1e305f981d41a2c30adb.png",
-    "static/media/nucleo.eot": "/gp/static/media/nucleo.bd5cce8bf40be5947637.eot",
-    "static/media/nucleo.ttf": "/gp/static/media/nucleo.35b08447277ca7bf9f09.ttf",
-    "static/media/nucleo.woff": "/gp/static/media/nucleo.5c65ef4d6434bb8062a3.woff",
-    "static/media/nucleo.woff2": "/gp/static/media/nucleo.6dfb4833e3a0132fd1fc.woff2",
-    "index.html": "/gp/index.html"
+    "main.css": "/graduation-web-app/static/css/main.402ccd9e.css",
+    "main.js": "/graduation-web-app/static/js/main.ac8538e8.js",
+    "static/media/square4.png": "/graduation-web-app/static/media/square4.b0072563cab16ef45d81.png",
+    "static/media/square1.png": "/graduation-web-app/static/media/square1.082ea17aaf44aed9868a.png",
+    "static/media/square3.png": "/graduation-web-app/static/media/square3.235ea41b7cee0696448d.png",
+    "static/media/square2.png": "/graduation-web-app/static/media/square2.8ce0f9b6a9f216ada045.png",
+    "static/media/square5.png": "/graduation-web-app/static/media/square5.16283001f5a086113265.png",
+    "static/media/darken-night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png": "/graduation-web-app/static/media/darken-night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.049a2cd26a85856a45e6.png",
+    "static/media/night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.png": "/graduation-web-app/static/media/night-sky-full-of-stars-fantasy-animation-made-of-magical-sparkly-light-particles-flickering-on-a-purple-blue-gradient-background_bajacpz7x_thumbnail-full01.e6a30d27482b2b409f71.png",
+    "static/media/dots.png": "/graduation-web-app/static/media/dots.1e305f981d41a2c30adb.png",
+    "static/media/nucleo.eot": "/graduation-web-app/static/media/nucleo.bd5cce8bf40be5947637.eot",
+    "static/media/nucleo.ttf": "/graduation-web-app/static/media/nucleo.35b08447277ca7bf9f09.ttf",
+    "static/media/nucleo.woff": "/graduation-web-app/static/media/nucleo.5c65ef4d6434bb8062a3.woff",
+    "static/media/nucleo.woff2": "/graduation-web-app/static/media/nucleo.6dfb4833e3a0132fd1fc.woff2",
+    "index.html": "/graduation-web-app/index.html"
   },
   "entrypoints": [
-    "static/css/main.92b962bc.css",
+    "static/css/main.402ccd9e.css",
     "static/js/main.ac8538e8.js"
   ]
 }
