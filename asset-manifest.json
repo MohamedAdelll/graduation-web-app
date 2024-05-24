@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/graduation-web-app/static/css/main.402ccd9e.css",
-    "main.js": "/graduation-web-app/static/js/main.158478d8.js",
+    "main.js": "/graduation-web-app/static/js/main.9a319c37.js",
     "static/media/square4.png": "/graduation-web-app/static/media/square4.b0072563cab16ef45d81.png",
     "static/media/square1.png": "/graduation-web-app/static/media/square1.082ea17aaf44aed9868a.png",
     "static/media/square3.png": "/graduation-web-app/static/media/square3.235ea41b7cee0696448d.png",
@@ -18,6 +18,6 @@
   },
   "entrypoints": [
     "static/css/main.402ccd9e.css",
-    "static/js/main.158478d8.js"
+    "static/js/main.9a319c37.js"
   ]
 }
