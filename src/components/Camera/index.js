@@ -1,33 +1,25 @@
-// CameraComponent.js
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
-import Webcam from "react-webcam";
 import { Button, Col, Container } from "reactstrap";
 
-export default function CameraComponent() {
-  const webcamRef = useRef(null);
-  const [isCameraOn, setIsCameraOn] = useState(false);
+export default function CameraComponent({ handleConnection }) {
+  const [recording, setRecording] = useState(false);
 
-  const startCamera = () => {
-    setIsCameraOn(true);
-  };
+  function startRecording() {
+    setRecording((prev) => !prev);
+    handleConnection((prev) => !prev);
+  }
 
-  const stopCamera = () => {
-    setIsCameraOn(false);
-  };
+  console.log("video_capture");
 
   return (
     <Container>
-      {isCameraOn ? (
-        <Col>
-          <Webcam audio={false} ref={webcamRef} />
-          <Button onClick={stopCamera}>Stop Camera</Button>
-        </Col>
-      ) : (
-        <Col>
-          <Button onClick={startCamera}>Start Camera</Button>
-        </Col>
-      )}
+      <img src="http://127.0.0.1:5001/api/video_feed" />
+      <Col>
+        <Button onClick={startRecording}>
+          {recording ? "Stop" : "Start"} Recording
+        </Button>
+      </Col>
     </Container>
   );
 }

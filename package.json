@@ -1,18 +1,11 @@
 {
-  "name": "blk-design-system-react",
+  "name": "Sign Language Translator",
   "version": "1.2.2",
   "description": "React version of BLK Design System by Creative Tim",
   "main": "index.js",
-  "author": "Creative Tim",
+  "homepage": "https://mohamedAdelll.github.io",
+  "author": "Mohamed Ashour",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/creativetimofficial/blk-design-system-react.git"
-  },
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/blk-design-system-react/issues"
-  },
-  "homepage": "https://demos.creative-tim.com/blk-design-system-react/#/",
   "keywords": [
     "react",
     "reactjs",
@@ -45,11 +38,15 @@
     "react-chartjs-2": "2.11.2",
     "react-datetime": "3.2.0",
     "react-dom": ">=16.8.0",
+    "react-icons": "^5.2.1",
+    "react-lottie": "^1.2.4",
     "react-router-dom": "6.11.1",
     "react-scripts": "5.0.1",
     "react-webcam": "^7.2.0",
     "reactstrap": "8.10.0",
     "sass": "1.62.1",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
     "web-vitals": "3.3.1"
   },
   "peerDependencies": {
@@ -67,7 +64,9 @@
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.css",
-    "minify-sass": "sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.min.css --style compressed"
+    "minify-sass": "sass src/assets/scss/blk-design-system-react.scss src/assets/css/blk-design-system-react.min.css --style compressed",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -91,5 +90,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

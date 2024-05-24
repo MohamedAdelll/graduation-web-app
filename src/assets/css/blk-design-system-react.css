@@ -18545,6 +18545,7 @@ textarea.form-control:active {
   color: #ffffff;
   font-weight: 600;
   text-transform: capitalize;
+  text-align: justify;
 }
 .index-page .page-header .container > .content-center.brand .h1-seo span,
 .index-page .page-header .container > .content-center.brand h3 span {

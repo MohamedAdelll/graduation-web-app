@@ -15,29 +15,42 @@
   * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
   */
-import React from 'react';
+import React from "react";
 
+import Lottie from "react-lottie";
 // reactstrap components
-import { Container } from 'reactstrap';
+import { Container } from "reactstrap";
+
+import animationData from "../../assets/lotties/heroLottie.json";
 
 export default function PageHeader() {
-    return (
-      <div className="page-header header-filter">
-        <div className="squares square1" />
-        <div className="squares square2" />
-        <div className="squares square3" />
-        <div className="squares square4" />
-        <div className="squares square5" />
-        <div className="squares square6" />
-        <div className="squares square7" />
-        <Container>
-          <div className="content-center brand">
-            <h1 className="h1-seo">Sign Language Translator</h1>
-            <h3 className="d-none d-sm-block">
-              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </h3>
-          </div>
-        </Container>
-      </div>
-    );
-  }
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+  return (
+    <div className="page-header header-filter">
+      <div className="squares square1" />
+      <div className="squares square2" />
+      <div className="squares square3" />
+      <div className="squares square4" />
+      {/* <div className="squares square5" />
+      <div className="squares square6" />
+      <div className="squares square7" /> */}
+      <Container>
+        <div className="content-center brand">
+          <h1 className="h1-seo">Sign Language Translator</h1>
+          <h3 className="d-none d-sm-block" style={{ opacity: 0.5 }}>
+            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </h3>
+          <Lottie options={defaultOptions} height={500} width={800} />
+        </div>
+      </Container>
+    </div>
+  );
+}
