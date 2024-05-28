@@ -85,7 +85,7 @@ export default function AppNavbar() {
           </div>
           <Nav navbar>
             <NavItem>
-              <NavLink to="/app/text-to-sign">
+              <NavLink to="/graduation-web-app/app/text-to-sign">
                 <Button
                   className="nav-link d-none d-lg-block"
                   color={
@@ -97,7 +97,7 @@ export default function AppNavbar() {
               </NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="/app/sign-to-text">
+              <NavLink to="/graduation-web-app/app/sign-to-text">
                 <Button
                   className="nav-link d-none d-lg-block"
                   color={

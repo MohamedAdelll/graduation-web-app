@@ -100,7 +100,7 @@ export default function IndexNavbar() {
           </div>
           <Nav navbar>
             <NavItem>
-              <NavLink to="/app/text-to-sign">
+              <NavLink to="/graduation-web-app/app/text-to-sign">
                 <Button className="nav-link d-none d-lg-block" color="primary">
                   <i className="tim-icons icon-spaceship" /> Go To App
                 </Button>

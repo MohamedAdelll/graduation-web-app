@@ -33,10 +33,12 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Index />} />
-      <Route path="/app" element={<App />}>
-        <Route index path="text-to-sign" element={<TextToSign />} />
-        <Route index path="sign-to-text" element={<SignToText />} />
+      <Route path="/graduation-web-app">
+        <Route index element={<Index />} />
+        <Route path="app" element={<App />}>
+          <Route index path="text-to-sign" element={<TextToSign />} />
+          <Route index path="sign-to-text" element={<SignToText />} />
+        </Route>
       </Route>
     </Routes>
   </BrowserRouter>
