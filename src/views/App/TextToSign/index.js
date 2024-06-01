@@ -48,7 +48,7 @@ export default function TextToSign() {
           <Input
             type="textarea"
             height="40px"
-            value={text}
+            dir={!text ? "ltr" : "rtl"}
             style={{ fontSize: "1.2rem" }}
             onChange={(e) => setText(e.target.value)}
             placeholder="Write something to be translated..."

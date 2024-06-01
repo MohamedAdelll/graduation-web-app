@@ -70,6 +70,7 @@ export default function SignToText() {
           readOnly
           placeholder="The text will be generated once you start recording"
           value={text}
+          dir={!text ? "ltr" : "rtl"}
           style={{ color: "#9ea3b1", fontSize: "1.2rem" }}
         ></Input>
       </Row>

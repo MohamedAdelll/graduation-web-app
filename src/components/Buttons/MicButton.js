@@ -33,7 +33,7 @@ export function MicButton({ onTextChange }) {
       }
     }
   };
-
+  console.log(listening);
   return (
     <button
       onClick={handleMicClick}
