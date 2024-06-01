@@ -17,10 +17,24 @@ export default function TextToSign() {
   const [text, setText] = useState("");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState("Avatar");
+  const [framesPath, setFramesPath] = useState(null);
 
   function handleDropdownChange(e) {
     console.log(e.target.textContent);
     setSelectedItem(e.target.textContent);
+  }
+
+  async function handleTranslate() {
+    const response = await fetch("http://localhost:5001/api/texttosign", {
+      method: "POST",
+      body: JSON.stringify({ text, avatar: !!selectedItem.startsWith("Use") }),
+      headers: { "Content-Type": "application/json" },
+    });
+    const data = await response.json();
+    console.log(data);
+    if (data.frames_path) {
+      setFramesPath(data.frames_path[0]);
+    }
   }
 
   function toggleDropdown() {
@@ -35,6 +49,7 @@ export default function TextToSign() {
             type="textarea"
             height="40px"
             value={text}
+            style={{ fontSize: "1.2rem" }}
             onChange={(e) => setText(e.target.value)}
             placeholder="Write something to be translated..."
           ></Input>
@@ -61,11 +76,24 @@ export default function TextToSign() {
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
-        <Button color="primary">Translate</Button>
+        <Button onClick={handleTranslate} color="primary">
+          Translate
+        </Button>
         <Button onClick={() => setText("")}>Reset</Button>
       </Row>
-      <Row className="mt-5">
-        <img />
+      <Row className="mt-5 justify-content-center">
+        {framesPath ? (
+          <iframe
+            src={framesPath}
+            width="640"
+            height="480"
+            title="video"
+            allow="autoplay"
+            referrerPolicy="origin"
+          ></iframe>
+        ) : (
+          ""
+        )}
       </Row>
     </Container>
   );

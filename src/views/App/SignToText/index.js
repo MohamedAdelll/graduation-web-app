@@ -8,6 +8,7 @@ import { io } from "socket.io-client";
 export default function SignToText() {
   const [connection, handleConnenction] = useState(false);
   const [socketInstance, setSocketInstance] = useState(null);
+  const [text, setText] = useState("");
 
   useEffect(function releasingCameraOnPageLeave() {
     function releaseCamera() {
@@ -36,8 +37,11 @@ export default function SignToText() {
 
       socket.emit("start_analyzing", { data: "I'm connected!" });
 
-      socket.on("data", (data) => {
+      socket.on("data", ({ data }) => {
         console.log(data);
+        if (typeof data === "string") {
+          setText((prev) => `${prev} ${data}`);
+        }
       });
 
       socket.on("disconnect", (data) => {
@@ -60,11 +64,15 @@ export default function SignToText() {
       <Col>
         <CameraComponent handleConnection={handleConnenction} />
       </Col>
-      <Input
-        className="mt-5"
-        readOnly
-        placeholder="The text will be generated once you start recording"
-      ></Input>
+      <Row style={{ paddingBottom: 100 }}>
+        <Input
+          className="mt-5"
+          readOnly
+          placeholder="The text will be generated once you start recording"
+          value={text}
+          style={{ color: "#9ea3b1", fontSize: "1.2rem" }}
+        ></Input>
+      </Row>
     </Container>
   );
 }

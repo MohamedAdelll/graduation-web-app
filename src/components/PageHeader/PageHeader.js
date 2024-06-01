@@ -45,8 +45,8 @@ export default function PageHeader() {
         <div className="content-center brand">
           <h1 className="h1-seo">Sign Language Translator</h1>
           <h3 className="d-none d-sm-block" style={{ opacity: 0.5 }}>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            An Awesome AI Sign language translator that can help you to
+            communicate with the deaf community.
           </h3>
           <Lottie options={defaultOptions} height={500} width={800} />
         </div>
